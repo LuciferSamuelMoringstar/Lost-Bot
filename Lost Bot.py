@@ -18,7 +18,7 @@ intents.presences = True
 prefix = 'ls!'
 client = commands.Bot(command_prefix=prefix, intents=intents)
 client.remove_command('help')
-os.chdir('C:/Users/Chris Nahimana/PycharmProjects/DiscordBot/lost Bot.py')
+os.chdir('C:/Users/Chris Nahimana/PycharmProjects/DiscordBot')
 
 color = random.choice([0xAA3939, 0xDC0A0A, 0x480D99, 0xc70000])
 
@@ -231,29 +231,4 @@ async def help(ctx):
     help.set_thumbnail(url=ctx.guild.icon_url)
     await ctx.send(embed=help)
 
-@client.command()
-async def balance(ctx):
-    await open_account(ctx.author)
-    users = bank_data()
-    cash = users[str(user.id)]['Wallet'] = 0
-
-
-async def open_account(user):
-    users = bank_data()
-    with open('bank.json', 'r') as f:
-        users = json.load(f)
-    if str(user.id) in users:
-        return False
-    else:
-        users[str(user.id)]['Wallet'] = 0
-        users[str(user.id)]['Bank'] = 100
-    with open('bank.json', 'w') as f:
-        json.dump(users,f)
-    return True
-
-async def bank_data():
-    with open('bank.json', 'r') as f:
-        users = json.load(f)
-    return users
-
-client.run('Token')
+client.run('NzYwMTg0OTIyMTY5NTQwNjUw.X3IXYA.oOXRFA-jvZKptr6A6IOPvOcnvZ0')
