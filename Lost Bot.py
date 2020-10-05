@@ -231,4 +231,4 @@ async def help(ctx):
     help.set_thumbnail(url=ctx.guild.icon_url)
     await ctx.send(embed=help)
 
-client.run('NzYwMTg0OTIyMTY5NTQwNjUw.X3IXYA.oOXRFA-jvZKptr6A6IOPvOcnvZ0')
+client.run('')
