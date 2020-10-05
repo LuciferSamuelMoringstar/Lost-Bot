@@ -256,4 +256,4 @@ async def bank_data():
         users = json.load(f)
     return users
 
-client.run('NzYwMTg0OTIyMTY5NTQwNjUw.X3IXYA.QDLuuaNxBgc_-2uqitDxmywiVNo')
+client.run('')
